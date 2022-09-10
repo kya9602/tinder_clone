@@ -1,9 +1,13 @@
 import React from "react";
+import Header from "../components/header/Header";
+import MainList from "../components/main/MainList";
 
-function Main() {
+
+const  Main=()=> {
   return (
     <>
-      <div>메인입니다</div>
+    <Header/>
+      <MainList></MainList>
     </>
   );
 }

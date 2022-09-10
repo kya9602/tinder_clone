@@ -51,12 +51,12 @@ const Input = styled.input `
   padding: 0 48px;
   justify-content: center;
   margin : auto;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Yeon Sung', cursive;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 20px;
-  
-  border: 1px solid red;
+  border: 5px solid #C30D23;
 
 `
 
