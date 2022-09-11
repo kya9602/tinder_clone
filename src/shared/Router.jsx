@@ -4,7 +4,7 @@ import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Main from "../pages/Main";
 import Mypage from "../pages/Mypage";
-
+import Choice from "../components/category/Choice";
 const Router = () => {
     return(
         <Routes>
@@ -12,6 +12,7 @@ const Router = () => {
            <Route path="/signup" exact element={<Signup />} />
            <Route path="/main" exact element={<Main />} />
            <Route path="/mypage" exact element={<Mypage />} />
+           <Route path="/choice" exact element={<Choice/>} />
             {/* <Route path="/message" exact element={<Message />} />*/}
             
         </Routes>
