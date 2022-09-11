@@ -1,9 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
+import TinderCards from "../components/TinderCards";
 
 function Main() {
   return (
     <>
-      <div>메인입니다</div>
+      <Header />      
+      <TinderCards />      
     </>
   );
 }
