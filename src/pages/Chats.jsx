@@ -1,10 +1,11 @@
 import React from "react";
-import Chat from "../pages/Chat";
+import Chat from "../components/Chat";
+import Header from "../components/Header";
 
 function Chats() {
   return (
-    <>
     <div className="chats">
+            <Header />
             <Chat
                 name="Jin"
                 message="Hey! "
@@ -18,8 +19,8 @@ function Chats() {
                 profilePic="https://img.sbs.co.kr/newimg/news/20171110/201112289_1280.jpg"
             />
         </div>
-    </>
   );
 }
 
 export default Chats;
+
