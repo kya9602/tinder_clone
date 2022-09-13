@@ -1,16 +1,16 @@
-import FormLogin from "../components/form/formLogin/FormLogin"
+import Choice from "../components/category/Choice";
 import LoginHeader from "../components/header/LoginHeader";
 
 // 로그인 페이지
 
-const Login = () => {
+const Choice = () => {
     return (
         <div>
             <LoginHeader/>
-            <FormLogin />
+            <Choice />
         </div>
     )
 }
 
 
-export default Login;
+export default Choice;
