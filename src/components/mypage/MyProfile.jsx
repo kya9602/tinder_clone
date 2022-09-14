@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -9,25 +9,35 @@ import MyProfileUploader from "../MyProfileUpload";
 const Mypage = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  
-    //이미지 내컴퓨터에서 가져오기
-    const fileInput = React.useRef(null);
-  
-  
-    const handleChange = e => {
-      console.log(e.target.files[0]);
-    };
 
+  let [userId, setUserId] = useState("")
+  let [userimg, setUserImg] = useState("")
+  let [usersex, setUserSex] = useState("")
 
-    const changeProfile = () => {
-      let frm = new FormData();
-      frm.append("imageUrl", );
-      frm.append("sex", );
-      dispatch((frm)).then(() => {
-        alert("변경되었습니다!");
-        navigate("/mypage");
-      });
-    };
+  let sendData;
+  const handleEffect = (handleSubmit) => {
+      sendData = {
+          img : userimg,
+          sex : usersex
+      }
+      handleSubmit()
+  }
+
+  const handleSubmit = () => {
+      let form_data = new FormData();
+      form_data.append('img', sendData.img);
+      form_data.append('sex', sendData.sex);
+      fetch('https://13.209.88.230:8080/profile/update/img' + userId + '/update/', {
+          method : 'PATCH',
+          headers: {
+              Authorization : `JWT ${localStorage.getItem('token')}`,
+          },
+          body : form_data
+      })
+      .then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => console.log('Success:', JSON.stringify(response)));
+  };
 
 
   return (
@@ -35,7 +45,9 @@ const Mypage = () => {
     
     <MyHeader>
     <BoldTitle> 프로필 수정 </BoldTitle>
-       <SaveBtn  onClick={() => {changeProfile();}}> 완료 </SaveBtn> {/* 네비게이션수정해주기 */}
+       <SaveBtn onClick={()=>{ handleEffect(handleSubmit)
+                               setUserImg("")
+                               setUserSex("")}}>완료</SaveBtn>
     </MyHeader>
     <NavigationBar>
     <ColorTitle> 수정 </ColorTitle>
@@ -45,19 +57,14 @@ const Mypage = () => {
        <StContainer>
           <MyProfileUploader />
       </StContainer>
-      {/* <FontAwesomeIcon
-              icon={faPlus}
-              size="2x"
-              style={{ color: "white" }}
-            /> */}
             <br/>
        <BoldTitle>성별</BoldTitle>
         <SDiv>
-          
         {/* <select>
           <option>남자　　　　　　　　</option>
           <option>여자　　　　　　　　</option>
         </select> */}
+
         </SDiv> 
     </Body> 
   </>  
@@ -67,7 +74,7 @@ const Mypage = () => {
 export default Mypage;
 
 const MyHeader = styled.div`
-  background-color: #fffff;
+  background-color: #ffffff;
   height: 50px;
 `;
 

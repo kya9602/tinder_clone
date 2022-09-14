@@ -1,11 +1,11 @@
 import React from "react";
-import MyPage from "../components/mypage/MyPage";
+import Info from "../components/mypage/Info";
 
 
 const Mypage = () => {
   return (
     <>
-    <MyPage />
+    <Info />
     </>
   );
 }

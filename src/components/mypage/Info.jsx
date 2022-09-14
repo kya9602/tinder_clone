@@ -7,7 +7,7 @@ import Banner from "../Banner";
 
 
 
-const Mypage = () => {
+const Info = () => {
   const navigate = useNavigate();
    
   return (
@@ -18,7 +18,8 @@ const Mypage = () => {
     <Body>
     <Container>
        <StContainer>
-
+            <MypfImg alt="MyPf" src="https://img.hankyung.com/photo/202108/BF.27314751.1.jpg"
+            onClick={() => {navigate("/img");}}/>
       </StContainer>
       <h2>nickName, 나이</h2>
       <br/>
@@ -37,7 +38,7 @@ const Mypage = () => {
     )
 }
 
-export default Mypage;
+export default Info;
 
 const MyHeader = styled.div`
   background-color: #ffffff;
@@ -73,20 +74,29 @@ const GoBackBtn = styled.button`
   cursor: pointer;
 `;
 
+const MypfImg = styled.img`
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  padding-top: 5px;
+`;
+
 const StContainer = styled.div`
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   border : 8px solid #eee;
   border-radius: 100px;
   cursor: pointer;
-  /* padding:12px 24px 24px 24px; */
 `;
 
 const ProfileButton = styled.button`
   border-radius: 50px;
   margin: 15px auto;
-  margin-top: 20px;
+  margin-top: 3px;
   border: none;
   padding: 18px;
   width: 4em;

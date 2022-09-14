@@ -6,7 +6,7 @@ const MyProfileUploader = () => {
 
   const [image, setImage] = useState({
     image_file: "",
-    imgUrl: "img/default_image.png",
+    imgUrl: "https://img.hankyung.com/photo/202108/BF.27314751.1.jpg",
   });
 
   let inputRef;
@@ -50,7 +50,7 @@ const MyProfileUploader = () => {
       alert("서버에 등록이 완료되었습니다!");
       setImage({
         image_file: "",
-        imgUrl: "img/default_image.png",
+        imgUrl: "https://img.hankyung.com/photo/202108/BF.27314751.1.jpg",
       });
     } else {
       alert("사진을 등록하세요!")
