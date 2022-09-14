@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "../components/header/Header";
-
-
+import MyPage from "../components/mypage/MyPage";
 
 
 const Mypage = () => {
   return (
     <>
-    <Header/>
-      <h1>마이페이지입니다.</h1>
+    <MyPage />
     </>
   );
 }
