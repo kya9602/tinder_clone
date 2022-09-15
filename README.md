@@ -33,6 +33,12 @@
 
 
 ## 와이어프레임
+![와퍼1](https://user-images.githubusercontent.com/110403476/190388989-15cf4854-e0f0-4b03-939f-b38906647697.jpg)
+
+![와퍼2](https://user-images.githubusercontent.com/110403476/190389264-49d77fb9-191d-4f6f-b432-a194ed486384.jpg)
+
+![와퍼3](https://user-images.githubusercontent.com/110403476/190389303-d3347d5c-453e-4126-b102-bb1199fb7432.jpg)
+
 
 ### 컨셉은 수정됨 
 
