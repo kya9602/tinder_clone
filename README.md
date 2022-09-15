@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+개발환경 
+-spring
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-react
 
-## Available Scripts
+-security
 
-In the project directory, you can run:
+-aws
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+구현기능
+-회원가입
 
-### `yarn test`
+-회원가입시 성별확인 및 프로필이미지 업로드 가능
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-로그인
 
-### `yarn build`
+-유저간 채팅기능
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-프로필카드 슬라이더로 확인
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-스와이퍼 방향으로 좋아요 싫어요 가능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-프로필,사진,닉네임수정가능
 
-### `yarn eject`
+-프리미엄 결제 확인 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-내 프로필 헤더 클릭 시 마이페이지 이동가능
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-마이페이지 이미지 클릭시 수정
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+와이어프레임
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* 컨셉은 수정됨 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+API 명세서
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+https://www.notion.so/a18ce553b375487fa95808bd0a0c5291?v=95a890cdb3d040d88cc9f97b82efebf7 
 
-### Analyzing the Bundle Size
+API 설계
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A new tool for teams & individuals that blends everyday work apps into one.
 
-### Making a Progressive Web App
+www.notion.so
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+트러블슈팅
+FE : 틴더의 전반적 구조가 스마트폰어플로 출시가 되어 와이어프레임을 기존사이트형식으로 구현한것이 오류였다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+구글에서도 확인할수 있는 프레임코드가 없었기 때문에 직접 다운을 받아서 기본적인 기능은 살리되 눈에 보이는 프레임은 최대한 동일하게 css를 구현하려고 노력하였다.
 
-### Deployment
+새로운 기능 중에는 swiper를 사용해서 결제창의 이벤트가 넘어가는 걸 구현하였는데 이미지디자인을 넣어서
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+구현하다보니 퀄리티 적으로 조금 낮게 제작이 되어 아쉬운 점
 
-### `yarn build` fails to minify
+해결안된 부분들은 기술/담임매니저님과 다른 팀원분들에게 도움을 받았음 앞으로 시간이 더 있었다면
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+유저별로 각자의 프로필사진 받아 뜰 수 있고, 프로필 사진을 변경할 수 있도록 제작하고 싶다.
+
+
+
+
+
+BE : springsecurity로 인한 프론트 접근 오류가 있었다. cors설정에 bean을 추가하여 오류를 해결하였다. profile기능 코드작성과정에서 profile NOTFOUND오류가 있었다. isPresentProfile 함수를 추가하여 해결하였다.
+
