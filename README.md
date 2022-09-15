@@ -37,7 +37,8 @@
 
 ![와퍼2](https://user-images.githubusercontent.com/110403476/190389264-49d77fb9-191d-4f6f-b432-a194ed486384.jpg)
 
-![와퍼3](https://user-images.githubusercontent.com/110403476/190389303-d3347d5c-453e-4126-b102-bb1199fb7432.jpg)
+![와퍼3](https://user-images.githubusercontent.com/110374433/190413426-7e7c2927-4320-45c8-8907-2495ad079ad6.png)
+![와퍼3](https://user-images.githubusercontent.com/110374433/190413432-6f79d8cd-1009-4953-8586-0b9a8d398f5c.png)
 
 
 ### 컨셉은 수정됨 
