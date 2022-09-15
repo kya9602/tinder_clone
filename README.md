@@ -43,10 +43,6 @@ https://www.notion.so/a18ce553b375487fa95808bd0a0c5291?v=95a890cdb3d040d88cc9f97
 
 API 설계
 
-A new tool for teams & individuals that blends everyday work apps into one.
-
-www.notion.so
-
 
 트러블슈팅
 FE : 틴더의 전반적 구조가 스마트폰어플로 출시가 되어 와이어프레임을 기존사이트형식으로 구현한것이 오류였다.
