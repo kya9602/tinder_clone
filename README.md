@@ -30,7 +30,7 @@
 
 -마이페이지 이미지 클릭시 수정
 
-
+-(채팅) sockjs를 이용한 데이터 통신
 
 ## 와이어프레임
 ![와퍼1](https://user-images.githubusercontent.com/110403476/190388989-15cf4854-e0f0-4b03-939f-b38906647697.jpg)
